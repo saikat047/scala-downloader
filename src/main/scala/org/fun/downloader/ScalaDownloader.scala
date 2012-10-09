@@ -4,6 +4,7 @@ import java.net.URL
 import scala.collection.immutable
 
 import org.slf4j._
+import org.apache.http.client._
 
 object ScalaDownloader {
   

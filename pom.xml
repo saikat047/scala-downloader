@@ -36,10 +36,11 @@
 		<version>2.1</version>
 	</dependency>
 	<dependency>
-      <groupId>net.databinder</groupId>
-      <artifactId>dispatch-core_2.9.0-1</artifactId>
-      <version>0.8.1</version>
-    </dependency>
+	   <groupId>org.apache.httpcomponents</groupId>
+	   <artifactId>httpclient</artifactId>
+	   <version>4.2.1</version>
+	   <scope>compile</scope>
+  	</dependency>
     <dependency> 
 	  <groupId>org.slf4j</groupId>
 	  <artifactId>slf4j-api</artifactId>
@@ -96,8 +97,6 @@
         <configuration>
           <useFile>false</useFile>
           <disableXmlReport>true</disableXmlReport>
-          <!-- If you have classpath issue like NoDefClassError,... -->
-          <!-- useManifestOnlyJar>false</useManifestOnlyJar -->
           <includes>
             <include>**/*Test.*</include>
             <include>**/*Suite.*</include>
