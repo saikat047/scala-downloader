@@ -55,6 +55,11 @@
 		<groupId>org.joda</groupId>
 		<artifactId>joda-convert</artifactId>
 		<version>1.2</version>
+	</dependency>
+	<dependency>
+		<groupId>commons-io</groupId>
+		<artifactId>commons-io</artifactId>
+		<version>2.4</version>
 	</dependency>            
   </dependencies>
 
@@ -88,6 +93,9 @@
 	      </executions>
 	      <configuration>
 	          <mainClass>org.fun.downloader.ScalaDownloader</mainClass>
+	          <arguments>
+	            <argument>http://1channel.ch</argument>
+	          </arguments>
 	      </configuration>
       </plugin>
       <plugin>
